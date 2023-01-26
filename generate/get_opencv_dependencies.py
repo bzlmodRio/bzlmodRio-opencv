@@ -1,0 +1,79 @@
+import sys
+import os
+
+from bazelrio_gentool.deps.dependency_container import DependencyContainer
+
+
+def _default_native_shared_platforms():
+    return [
+        "linuxaarch64bionic",
+        "linuxraspbian",
+        "linuxx86-64",
+        "osxx86-64",
+        "windowsx86-64",
+        "windowsx86",
+    ]
+    # return ["linuxarm32", "linuxarm64", "linuxx86-64", "osxuniversal", "windowsx86-64"]
+
+
+def _default_native_static_platforms():
+    return [x + "static" for x in _default_native_shared_platforms()]
+
+
+def _default_native_shared_debug_platforms():
+    return [x + "debug" for x in _default_native_shared_platforms()]
+
+
+def _default_native_static_debug_platforms():
+    return [x + "staticdebug" for x in _default_native_shared_platforms()]
+
+
+def _default_all_native_platforms():
+    return (
+        _default_native_shared_platforms()
+        + _default_native_static_platforms()
+        + _default_native_shared_debug_platforms()
+        + _default_native_static_debug_platforms()
+    )
+
+
+def _default_all_platforms():
+    return [
+        "linuxathena",
+        "linuxathenastatic",
+        "linuxathenadebug",
+        "linuxathenastaticdebug",
+    ] + _default_all_native_platforms()
+
+
+def get_opencv_dependencies():
+    year = "2022"
+    version = "4.5.2-1"
+
+    group_id = f"edu.wpi.first.thirdparty.frc{year}.opencv"
+
+    group = DependencyContainer(
+        "bzlmodrio-opencv", version, year, "https://frcmaven.wpi.edu/release"
+    )
+    group.create_cc_dependency(
+        f"opencv-cpp",
+        parent_folder="opencv",
+        group_id=group_id,
+        headers="headers",
+        sources=None,
+        resources=_default_all_platforms(),
+        has_jni=True,
+    )
+
+    group.create_java_dependency(
+        f"opencv-java",
+        parent_folder="opencv",
+        group_id=group_id,
+        dependencies=["opencv-cpp"],
+    )
+
+    return group
+
+
+if __name__ == "__main__":
+    get_opencv_dependencies()

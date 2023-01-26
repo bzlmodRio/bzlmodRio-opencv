@@ -1,0 +1,34 @@
+alias(
+    name = "opencv",
+    actual = ":shared",
+    visibility = ["//visibility:public"],
+)
+
+cc_library(
+    name = "shared",
+    linkstatic = 1,
+    visibility = ["//visibility:public"],
+    deps = [
+    ] + [
+        "@bzlmodrio-opencv//private/cpp/opencv:shared",
+    ],
+)
+
+cc_library(
+    name = "static",
+    linkstatic = 1,
+    visibility = ["//visibility:public"],
+    deps = [
+    ] + [
+        "@bzlmodrio-opencv//private/cpp/opencv:static",
+    ],
+)
+
+cc_library(
+    name = "jni",
+    visibility = ["//visibility:public"],
+    deps = [
+        ":opencv",
+        "@bzlmodrio-opencv//private/cpp/opencv:jni",
+    ],
+)
