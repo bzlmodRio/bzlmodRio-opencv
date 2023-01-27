@@ -6,14 +6,15 @@ from bazelrio_gentool.deps.dependency_container import DependencyContainer
 
 def _default_native_shared_platforms():
     return [
-        "linuxaarch64bionic",
-        "linuxraspbian",
+        "linuxarm32",
+        "linuxarm64",
         "linuxx86-64",
+        "osxarm64",
+        "osxuniversal",
         "osxx86-64",
         "windowsx86-64",
         "windowsx86",
     ]
-    # return ["linuxarm32", "linuxarm64", "linuxx86-64", "osxuniversal", "windowsx86-64"]
 
 
 def _default_native_static_platforms():
@@ -47,8 +48,8 @@ def _default_all_platforms():
 
 
 def get_opencv_dependencies():
-    year = "2022"
-    version = "4.5.2-1"
+    year = "2023"
+    version = "4.6.0-4"
 
     group_id = f"edu.wpi.first.thirdparty.frc{year}.opencv"
 
@@ -60,7 +61,7 @@ def get_opencv_dependencies():
         parent_folder="opencv",
         group_id=group_id,
         headers="headers",
-        sources=None,
+        sources="sources",
         resources=_default_all_platforms(),
         has_jni=True,
     )
