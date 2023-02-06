@@ -11,7 +11,6 @@ def _default_native_shared_platforms():
         "linuxx86-64",
         "osxarm64",
         "osxuniversal",
-        "osxx86-64",
         "windowsx86-64",
         "windowsx86",
     ]
@@ -50,11 +49,16 @@ def _default_all_platforms():
 def get_opencv_dependencies():
     year = "2023"
     version = "4.6.0-4"
+    patch = "-1"
 
     group_id = f"edu.wpi.first.thirdparty.frc{year}.opencv"
 
     group = DependencyContainer(
-        "bzlmodrio-opencv", version, year, "https://frcmaven.wpi.edu/release"
+        "bzlmodrio-opencv",
+        version,
+        year,
+        "https://frcmaven.wpi.edu/release",
+        patch=patch,
     )
     group.create_cc_dependency(
         f"opencv-cpp",
