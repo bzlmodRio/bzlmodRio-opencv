@@ -1,6 +1,3 @@
-import sys
-import os
-
 from bazelrio_gentool.deps.dependency_container import DependencyContainer
 
 
@@ -49,7 +46,7 @@ def _default_all_platforms():
 def get_opencv_dependencies():
     year = "2023"
     version = "4.6.0-4"
-    patch = "-1"
+    patch = ""
 
     group_id = f"edu.wpi.first.thirdparty.frc{year}.opencv"
 
