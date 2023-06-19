@@ -1,3 +1,5 @@
+load("@rules_java//java:defs.bzl", "java_import")
+
 java_import(
     name = "opencv",
     jars = ["@edu_wpi_first_thirdparty_frc2023_opencv_opencv_java//jar:file"],
