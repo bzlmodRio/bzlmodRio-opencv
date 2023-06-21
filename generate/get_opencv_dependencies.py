@@ -65,6 +65,7 @@ def get_opencv_dependencies():
         sources="sources",
         resources=_default_all_platforms(),
         has_jni=True,
+        has_install_name_patches=False,
     )
 
     group.create_java_dependency(
