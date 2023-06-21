@@ -76,7 +76,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.AUTO_UPDATE_KEY }}
       with:
         path: libraries/bzlmodrio-opencv
-        base: refactor_dev
+        base: main
         token: ${{ secrets.AUTO_UPDATE_KEY }}
         reviewers: pjreiniger
         branch: autoupdate
