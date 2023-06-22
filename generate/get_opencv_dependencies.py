@@ -10,6 +10,7 @@ def _default_native_shared_platforms():
         "osxuniversal",
         "windowsx86-64",
         "windowsx86",
+        "windowsarm64",
     ]
 
 
