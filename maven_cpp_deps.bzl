@@ -80,239 +80,239 @@ def __setup_bzlmodrio_opencv_cpp_dependencies(mctx):
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_opencv_opencv-cpp_headers",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-4/opencv-cpp-4.6.0-4-headers.zip",
-        sha256 = "69c9693c87c620d4b07b93f322f21e813ba9ce0ad16604709c8b373774422736",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-5/opencv-cpp-4.6.0-5-headers.zip",
+        sha256 = "2530b606752365067a59326c3fe8e9648362254247d1bfce668598558a14c351",
         build_file_content = cc_library_headers,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_opencv_opencv-cpp_sources",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-4/opencv-cpp-4.6.0-4-sources.zip",
-        sha256 = "f991b70e136fa13394de8589e19009f51ce0a548d38bd79b01428e2c9258a9b1",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-5/opencv-cpp-4.6.0-5-sources.zip",
+        sha256 = "f0e0c09eb24209477238cb635b177f668741a20d12fc5ed2d19b14ebbdf88eed",
         build_file_content = cc_library_sources,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_opencv_opencv-cpp_linuxathena",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-4/opencv-cpp-4.6.0-4-linuxathena.zip",
-        sha256 = "48b2156fb4cdfca85e60c1dd9d033951230beb2f15e743170a2bec35b8f3f634",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-5/opencv-cpp-4.6.0-5-linuxathena.zip",
+        sha256 = "518d6784eea3960bfade28baef66888a5ecbeeda8b424ca6ebbdfb9bd69b5bdc",
         build_file_content = cc_library_shared,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_opencv_opencv-cpp_linuxathenastatic",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-4/opencv-cpp-4.6.0-4-linuxathenastatic.zip",
-        sha256 = "e5675776e53fa2d4ab1a4058e014f661726ce09663d54806e52e797d074daaff",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-5/opencv-cpp-4.6.0-5-linuxathenastatic.zip",
+        sha256 = "52437b5f77fafea31c0a14b3783a71cc7ed95146ce6431d44e80a53a4457ec58",
         build_file_content = cc_library_static,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_opencv_opencv-cpp_linuxathenadebug",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-4/opencv-cpp-4.6.0-4-linuxathenadebug.zip",
-        sha256 = "4486186e52854ef3249d9acac522122a620011dd1b46b5486d77f847af93d7b3",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-5/opencv-cpp-4.6.0-5-linuxathenadebug.zip",
+        sha256 = "428b9f35c72f869f70360e74187fbb9a899a859c25d40acf3adc65f448079077",
         build_file_content = cc_library_shared,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_opencv_opencv-cpp_linuxathenastaticdebug",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-4/opencv-cpp-4.6.0-4-linuxathenastaticdebug.zip",
-        sha256 = "5e206cfed8888bbcebfcd39aedcdbee05a90fb313656c8e6d8865c61cc32b1dd",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-5/opencv-cpp-4.6.0-5-linuxathenastaticdebug.zip",
+        sha256 = "62c9a1146189cddca666b59f2456d60b925ef4955c8caee342728ead0400a5f2",
         build_file_content = cc_library_static,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_opencv_opencv-cpp_linuxarm32",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-4/opencv-cpp-4.6.0-4-linuxarm32.zip",
-        sha256 = "2103e504a9153243d2c918b6f59156a6c2b3cfd9a95b65b90ae462fe3787c06a",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-5/opencv-cpp-4.6.0-5-linuxarm32.zip",
+        sha256 = "0090a4c872ef67c269fe239cf4f88c8bfcabe33b697ecf04c8847160f40da200",
         build_file_content = cc_library_shared,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_opencv_opencv-cpp_linuxarm64",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-4/opencv-cpp-4.6.0-4-linuxarm64.zip",
-        sha256 = "f9790ed76e5b489491575743a01a60a1049c9705f66a311b829bbd030234faa3",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-5/opencv-cpp-4.6.0-5-linuxarm64.zip",
+        sha256 = "8e2553446e23ac4bb53b29bc3442c8ac33db7ae217093c119b5229f6bbe0b3e1",
         build_file_content = cc_library_shared,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_opencv_opencv-cpp_linuxx86-64",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-4/opencv-cpp-4.6.0-4-linuxx86-64.zip",
-        sha256 = "1024fa62ad0b6b894c37ad92142061fc8c7dffcebae3d6076c871a25475f9486",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-5/opencv-cpp-4.6.0-5-linuxx86-64.zip",
+        sha256 = "7bb879bf247fcf720cda759bbe1624ccb5bca9d338d5697d49487fb965e0aa77",
         build_file_content = cc_library_shared,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_opencv_opencv-cpp_osxarm64",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-4/opencv-cpp-4.6.0-4-osxarm64.zip",
-        sha256 = "4451cc0f596ed6d70a9b350de9462c69e42b9554ada3412a8e30bfc900ec45b0",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-5/opencv-cpp-4.6.0-5-osxarm64.zip",
+        sha256 = "4dcf750a6e7d1ec2452275e9d03ee6a7d06a3b61b8cc2be279f25cff50f60636",
         build_file_content = cc_library_shared,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_opencv_opencv-cpp_osxuniversal",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-4/opencv-cpp-4.6.0-4-osxuniversal.zip",
-        sha256 = "4cf8bbf6760bebf474bee18a57d40e9d83c6888bac1abe1669116cc603b01e5b",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-5/opencv-cpp-4.6.0-5-osxuniversal.zip",
+        sha256 = "d9a4054568cd02af35915d6dd72c4d0e883fc093b7ce22f780aed7dbc402b6b8",
         build_file_content = cc_library_shared,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_opencv_opencv-cpp_windowsx86-64",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-4/opencv-cpp-4.6.0-4-windowsx86-64.zip",
-        sha256 = "2ecc2a6df340f524259d77d3f419c09baa6310aba681c63a081749f18df6aee4",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-5/opencv-cpp-4.6.0-5-windowsx86-64.zip",
+        sha256 = "198585b4787409eaa18f0f1c12d02defd307ccc0ccd7310c37b10c756aa65ae0",
         build_file_content = cc_library_shared,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_opencv_opencv-cpp_windowsx86",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-4/opencv-cpp-4.6.0-4-windowsx86.zip",
-        sha256 = "53f6ab08c876a8832281847367421af23bcb805130839df3f26ab09880be8808",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-5/opencv-cpp-4.6.0-5-windowsx86.zip",
+        sha256 = "d741e03ff1c5fca57f6a3cb50cea2fa5cda1f61d6ea50d87e606f1e718bc8cbe",
         build_file_content = cc_library_shared,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_opencv_opencv-cpp_linuxarm32static",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-4/opencv-cpp-4.6.0-4-linuxarm32static.zip",
-        sha256 = "e4bfb01cd88c38d3dd3eefee85893b60b5e99625d083e69ed4fd67898dd4b298",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-5/opencv-cpp-4.6.0-5-linuxarm32static.zip",
+        sha256 = "6f5fcf8e0e23ba270fdef283440df57bda5a647a221829838a6aabc5d2364bba",
         build_file_content = cc_library_static,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_opencv_opencv-cpp_linuxarm64static",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-4/opencv-cpp-4.6.0-4-linuxarm64static.zip",
-        sha256 = "c3a2d05abfcc1132ae4ff7c2e175adea95b0843f59e775ad24d8a6ae0e320f4e",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-5/opencv-cpp-4.6.0-5-linuxarm64static.zip",
+        sha256 = "c4761548f43525bfb47d900513ccfc255dda4ca752cf7630ec794e1d8d9f1183",
         build_file_content = cc_library_static,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_opencv_opencv-cpp_linuxx86-64static",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-4/opencv-cpp-4.6.0-4-linuxx86-64static.zip",
-        sha256 = "58798265cdeae2f237d4b018f3cc1fdaa4557bbfd0a09503e069f0eae93c6b62",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-5/opencv-cpp-4.6.0-5-linuxx86-64static.zip",
+        sha256 = "7e6787c1464b7244424ddd2136c932bd44f00cae03eb1cc5568559ec2306aa30",
         build_file_content = cc_library_static,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_opencv_opencv-cpp_osxarm64static",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-4/opencv-cpp-4.6.0-4-osxarm64static.zip",
-        sha256 = "6f473c6c0bf00c8209722a808a143afc7f654ca88ea56025719fa88988ec70d3",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-5/opencv-cpp-4.6.0-5-osxarm64static.zip",
+        sha256 = "169c92c95e6f1945c45ca33a88e53d0e79f9e931ae663667507b5fadc850f9d8",
         build_file_content = cc_library_static,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_opencv_opencv-cpp_osxuniversalstatic",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-4/opencv-cpp-4.6.0-4-osxuniversalstatic.zip",
-        sha256 = "342405818d0f0a0d6528c0385ddd268805d36854d1e895c608d5b6953d2da0f1",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-5/opencv-cpp-4.6.0-5-osxuniversalstatic.zip",
+        sha256 = "2e601e3c676de93a0be317ca6f3021054a7a0e0d0a645a652ce90a771c38d752",
         build_file_content = cc_library_static,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_opencv_opencv-cpp_windowsx86-64static",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-4/opencv-cpp-4.6.0-4-windowsx86-64static.zip",
-        sha256 = "9b97f5d3894e80c27758782d1d71cfc7c641021f79d83a481e3faa70a13bff21",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-5/opencv-cpp-4.6.0-5-windowsx86-64static.zip",
+        sha256 = "d2b827528560ee28838f50fe10d0f083ec6fcb5b15710e0216a487d2372ef7d1",
         build_file_content = cc_library_static,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_opencv_opencv-cpp_windowsx86static",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-4/opencv-cpp-4.6.0-4-windowsx86static.zip",
-        sha256 = "60b7f324c29c3d0d11bca3c56c7c1077683c10fdbf1cc5afe02114601007972e",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-5/opencv-cpp-4.6.0-5-windowsx86static.zip",
+        sha256 = "e01ef6e79aea79fbd16928bd85819bfb8d45113500e1d94674a0cf8aa7b0a90b",
         build_file_content = cc_library_static,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_opencv_opencv-cpp_linuxarm32debug",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-4/opencv-cpp-4.6.0-4-linuxarm32debug.zip",
-        sha256 = "c86483fba67e78ab868acf95ca5183754b5f546fe1c5665a9306d61007052c8d",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-5/opencv-cpp-4.6.0-5-linuxarm32debug.zip",
+        sha256 = "203c369164c81774948fbf2750118c39cd511534fc823a901564152e6a354e7e",
         build_file_content = cc_library_shared,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_opencv_opencv-cpp_linuxarm64debug",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-4/opencv-cpp-4.6.0-4-linuxarm64debug.zip",
-        sha256 = "e40c893a6fe69ae5d6784bbe428f810db5c4a40754f2485e5b5ec74d95567d66",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-5/opencv-cpp-4.6.0-5-linuxarm64debug.zip",
+        sha256 = "0f7ce021fdcb973ea906345404439ec422bfd5fdab4e149022389d87bcdf1d95",
         build_file_content = cc_library_shared,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_opencv_opencv-cpp_linuxx86-64debug",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-4/opencv-cpp-4.6.0-4-linuxx86-64debug.zip",
-        sha256 = "0956493a063d4a4ffb2b6cfdb0611554e24862eb4efe74df6c53ad1450ff1668",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-5/opencv-cpp-4.6.0-5-linuxx86-64debug.zip",
+        sha256 = "14da1ec987f30e98204a5cf3745b3403fac4a38e12e3a4ec0343343ae495aaf7",
         build_file_content = cc_library_shared,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_opencv_opencv-cpp_osxarm64debug",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-4/opencv-cpp-4.6.0-4-osxarm64debug.zip",
-        sha256 = "4883fce97b97a5dbbeef417427e7e40bfd3f0e5eb9f8597653916f9f5bf1c1cc",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-5/opencv-cpp-4.6.0-5-osxarm64debug.zip",
+        sha256 = "f32be064ca51a631f8c78802af2fa2a3acebcdb67351e6d1bbd1a4b757089711",
         build_file_content = cc_library_shared,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_opencv_opencv-cpp_osxuniversaldebug",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-4/opencv-cpp-4.6.0-4-osxuniversaldebug.zip",
-        sha256 = "bccc8a0b5c695d077ba04aa90d35f2f43607c2424df11824f960a37d718b35ee",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-5/opencv-cpp-4.6.0-5-osxuniversaldebug.zip",
+        sha256 = "1acb0769e1a9e753e3d82ee0e3d09653adda61f0ee6039fa29460d08ea44959f",
         build_file_content = cc_library_shared,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_opencv_opencv-cpp_windowsx86-64debug",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-4/opencv-cpp-4.6.0-4-windowsx86-64debug.zip",
-        sha256 = "a367c0c53f01666b5894aa44016f27d132f36764617374fe550836b06bffbb83",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-5/opencv-cpp-4.6.0-5-windowsx86-64debug.zip",
+        sha256 = "849003fec2f287382043b96f0cc92ae51cc27fe2838dd75665abab98aa9a1d7b",
         build_file_content = cc_library_shared,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_opencv_opencv-cpp_windowsx86debug",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-4/opencv-cpp-4.6.0-4-windowsx86debug.zip",
-        sha256 = "52de048fc90b70293f5161983a692b1372110dd1b004be5f865d4239a6423156",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-5/opencv-cpp-4.6.0-5-windowsx86debug.zip",
+        sha256 = "79036d599eea7aba2f0d3d73515b0041046b0d433a540cc17b99ac4be5bca50b",
         build_file_content = cc_library_shared,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_opencv_opencv-cpp_linuxarm32staticdebug",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-4/opencv-cpp-4.6.0-4-linuxarm32staticdebug.zip",
-        sha256 = "f72bf5f9ab5ed525951169320c67356885e80485b7657d17b9894f630730adec",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-5/opencv-cpp-4.6.0-5-linuxarm32staticdebug.zip",
+        sha256 = "f40d92d225c58536c7d680c620d711c26ab8a96ada81c0d2b260fc10635ffad0",
         build_file_content = cc_library_static,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_opencv_opencv-cpp_linuxarm64staticdebug",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-4/opencv-cpp-4.6.0-4-linuxarm64staticdebug.zip",
-        sha256 = "30c72879a0c7ce046732d2d794a21ba60b09bb71c2d57e6192af90c8aab08fdf",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-5/opencv-cpp-4.6.0-5-linuxarm64staticdebug.zip",
+        sha256 = "84fabb01930b54d4b3c55fb1f841c0edd6b860161599fa54396aa9a980cb78d8",
         build_file_content = cc_library_static,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_opencv_opencv-cpp_linuxx86-64staticdebug",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-4/opencv-cpp-4.6.0-4-linuxx86-64staticdebug.zip",
-        sha256 = "3af477003ec993aa9a20308a4e1030f097a34552640440b5c66ef9d554a297bd",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-5/opencv-cpp-4.6.0-5-linuxx86-64staticdebug.zip",
+        sha256 = "b357ea839a31e1346e3a499eaaca0d7ad5cf13c8a22a0b3a4d105e3e21f165f1",
         build_file_content = cc_library_static,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_opencv_opencv-cpp_osxarm64staticdebug",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-4/opencv-cpp-4.6.0-4-osxarm64staticdebug.zip",
-        sha256 = "53331ca83dbc862a1fffbe0b4a1cebcbb59f055d202a236b2641d7203beefcd9",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-5/opencv-cpp-4.6.0-5-osxarm64staticdebug.zip",
+        sha256 = "383749cb003db028483acbddc2d1eadb93cb553a7ff932d3e83a93ef53530115",
         build_file_content = cc_library_static,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_opencv_opencv-cpp_osxuniversalstaticdebug",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-4/opencv-cpp-4.6.0-4-osxuniversalstaticdebug.zip",
-        sha256 = "4be1972406a676b184ca527a92bf8e72c19e58e14d6acd3a93e067c92ca6aeb5",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-5/opencv-cpp-4.6.0-5-osxuniversalstaticdebug.zip",
+        sha256 = "4ee15c9e7bae3fba200d1aa6ef1f515c34a86205cad60c519772d0d8a0d76064",
         build_file_content = cc_library_static,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_opencv_opencv-cpp_windowsx86-64staticdebug",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-4/opencv-cpp-4.6.0-4-windowsx86-64staticdebug.zip",
-        sha256 = "5ec11ce7a8ebb510b21a8325b19059da9011c6f48abfe587be0b298a6d4c7652",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-5/opencv-cpp-4.6.0-5-windowsx86-64staticdebug.zip",
+        sha256 = "589c7c50bfe949a264b0d51e2f7ca1406264071c1955e205cb89f948d6f18b75",
         build_file_content = cc_library_static,
     )
     maybe(
         http_archive,
         "bazelrio_edu_wpi_first_thirdparty_frc_opencv_opencv-cpp_windowsx86staticdebug",
-        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-4/opencv-cpp-4.6.0-4-windowsx86staticdebug.zip",
-        sha256 = "3569e9bcf51bcf4e15761dd08ea35de11263ea4e091fd38c43eae49a2d22e2f4",
+        url = "https://frcmaven.wpi.edu/release/edu/wpi/first/thirdparty/frc2023/opencv/opencv-cpp/4.6.0-5/opencv-cpp-4.6.0-5-windowsx86staticdebug.zip",
+        sha256 = "39598cf5fad76f55466b5d4493466d69ddb5ac2c795a69a2fba99b665ab60c1f",
         build_file_content = cc_library_static,
     )
 
