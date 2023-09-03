@@ -39,6 +39,7 @@ build:macos --cxxopt=-Wno-error=deprecated-declarations
 build:macos --cxxopt=-Wno-error=deprecated-enum-enum-conversion
 build:macos --cxxopt=-Wno-error=deprecated-anon-enum-enum-conversion
 build:macos --cxxopt=-Wno-error=inconsistent-missing-override
+build:macos --cxxopt=-Wno-error=overloaded-virtual
 
 # Roborio
 build:roborio --incompatible_enable_cc_toolchain_resolution
