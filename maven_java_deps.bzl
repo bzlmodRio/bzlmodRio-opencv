@@ -2,9 +2,9 @@ load("@bazel_tools//tools/build_defs/repo:jvm.bzl", "jvm_maven_import_external")
 
 def __setup_bzlmodrio_opencv_java_dependencies(mctx):
     jvm_maven_import_external(
-        name = "edu_wpi_first_thirdparty_frc2023_opencv_opencv_java",
-        artifact = "edu.wpi.first.thirdparty.frc2023.opencv:opencv-java:4.6.0-5",
-        artifact_sha256 = "dd74cfd431ef56eb873ce8f81966c4351cbf7f865b798077a2b060787ac697b6",
+        name = "edu_wpi_first_thirdparty_frc2024_opencv_opencv_java",
+        artifact = "edu.wpi.first.thirdparty.frc2024.opencv:opencv-java:4.8.0-1",
+        artifact_sha256 = "79d6a1cd4c6e98c3a2be76e85fda775bcee504e5207b8a91cd08a219b896baf9",
         server_urls = ["https://frcmaven.wpi.edu/release"],
     )
 
