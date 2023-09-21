@@ -1,7 +1,7 @@
 module(
     name = "bzlmodrio-opencv",
-    version = "4.6.0-5",
-    compatibility_level = 2023,
+    version = "4.8.0-1",
+    compatibility_level = 2024,
 )
 
 bazel_dep(name = "platforms", version = "0.0.7")
@@ -56,5 +56,5 @@ use_repo(
 setup_bzlmodrio_opencv_java_dependencies = use_extension("//:maven_java_deps.bzl", "setup_bzlmodrio_opencv_java_dependencies")
 use_repo(
     setup_bzlmodrio_opencv_java_dependencies,
-    "edu_wpi_first_thirdparty_frc2023_opencv_opencv_java",
+    "edu_wpi_first_thirdparty_frc2024_opencv_opencv_java",
 )
