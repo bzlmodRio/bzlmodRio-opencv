@@ -76,6 +76,8 @@ def get_opencv_dependencies():
         dependencies=["opencv-cpp"],
     )
 
+    group.sanitized_version = year + "." + group.sanitized_version
+
     return group
 
 
