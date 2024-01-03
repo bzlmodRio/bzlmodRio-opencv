@@ -1,6 +1,6 @@
 {
   "lockFileVersion": 3,
-  "moduleFileHash": "4d9764f1b9390884b9d571873ddc47a7fdb7794becdc3bd26756534add8edee3",
+  "moduleFileHash": "1efa91bd02fa305cbb5c6c2215a4460ce7fdc3b7358cf8bcf3bf493c91156dd2",
   "flags": {
     "cmdRegistries": [
       "https://raw.githubusercontent.com/pjreiniger/bazel-central-registry/bzlmodrio/"
@@ -13,7 +13,7 @@
     "compatibilityMode": "ERROR"
   },
   "localOverrideHashes": {
-    "bzlmodrio-opencv": "25e3373fc511399cd8aafe330cdfcdff5451c970840fd87fdbf808a0f6a27d1f",
+    "bzlmodrio-opencv": "97b078520f8ba91f0f2185e404b0304341dd1aa03dfa1a205c6f65d9d404f669",
     "bazel_tools": "0cc38516259ab87144b82461dd874e139f093d8e356667c3a3c5a52441ac448f"
   },
   "moduleDepGraph": {
@@ -74,7 +74,7 @@
         "rules_cc": "rules_cc@0.0.9",
         "rules_java": "rules_java@6.4.0",
         "rules_jvm_external": "rules_jvm_external@5.3",
-        "rules_bazelrio": "rules_bazelrio@0.0.13",
+        "rules_bazelrio": "rules_bazelrio@0.0.14",
         "rules_bzlmodrio_toolchains": "rules_bzlmodrio_toolchains@2024-1",
         "rules_pmd": "rules_pmd@6.43.0",
         "rules_checkstyle": "rules_checkstyle@10.1",
@@ -169,7 +169,7 @@
         "platforms": "platforms@0.0.7",
         "rules_cc": "rules_cc@0.0.9",
         "rules_java": "rules_java@6.4.0",
-        "rules_bazelrio": "rules_bazelrio@0.0.13",
+        "rules_bazelrio": "rules_bazelrio@0.0.14",
         "rules_bzlmodrio_toolchains": "rules_bzlmodrio_toolchains@2024-1",
         "bazel_tools": "bazel_tools@_",
         "local_config_platform": "local_config_platform@_"
@@ -446,10 +446,10 @@
         }
       }
     },
-    "rules_bazelrio@0.0.13": {
+    "rules_bazelrio@0.0.14": {
       "name": "rules_bazelrio",
-      "version": "0.0.13",
-      "key": "rules_bazelrio@0.0.13",
+      "version": "0.0.14",
+      "key": "rules_bazelrio@0.0.14",
       "repoName": "rules_bazelrio",
       "executionPlatformsToRegister": [],
       "toolchainsToRegister": [],
@@ -457,9 +457,9 @@
         {
           "extensionBzlFile": "@rules_jvm_external//:extensions.bzl",
           "extensionName": "maven",
-          "usingModule": "rules_bazelrio@0.0.13",
+          "usingModule": "rules_bazelrio@0.0.14",
           "location": {
-            "file": "https://raw.githubusercontent.com/pjreiniger/bazel-central-registry/bzlmodrio/modules/rules_bazelrio/0.0.13/MODULE.bazel",
+            "file": "https://raw.githubusercontent.com/pjreiniger/bazel-central-registry/bzlmodrio/modules/rules_bazelrio/0.0.14/MODULE.bazel",
             "line": 12,
             "column": 22
           },
@@ -484,7 +484,7 @@
               },
               "devDependency": false,
               "location": {
-                "file": "https://raw.githubusercontent.com/pjreiniger/bazel-central-registry/bzlmodrio/modules/rules_bazelrio/0.0.13/MODULE.bazel",
+                "file": "https://raw.githubusercontent.com/pjreiniger/bazel-central-registry/bzlmodrio/modules/rules_bazelrio/0.0.14/MODULE.bazel",
                 "line": 13,
                 "column": 14
               }
@@ -506,13 +506,15 @@
         "bzlFile": "@bazel_tools//tools/build_defs/repo:http.bzl",
         "ruleClassName": "http_archive",
         "attributes": {
-          "name": "rules_bazelrio~0.0.13",
+          "name": "rules_bazelrio~0.0.14",
           "urls": [
-            "https://github.com/bzlmodRio/rules_bazelrio/releases/download/0.0.13/rules_bazelrio-0.0.13.tar.gz"
+            "https://github.com/bzlmodRio/rules_bazelrio/releases/download/0.0.14/rules_bazelrio-0.0.14.tar.gz"
           ],
-          "integrity": "sha256-tDmx+j6tAV2Psg+ATmX8h30o050ze5Y9sBERnGx6I6U=",
+          "integrity": "sha256-DFqYR2rFtgZomGO3ue8/fWhcR84mgeRIypd+jpXeMcE=",
           "strip_prefix": "",
-          "remote_patches": {},
+          "remote_patches": {
+            "https://raw.githubusercontent.com/pjreiniger/bazel-central-registry/bzlmodrio/modules/rules_bazelrio/0.0.14/patches/module_dot_bazel.patch": "sha256-FPd6CZmaPDIlZDaH9seo+R/2vRHDs+awX0Ut4sJd9vQ="
+          },
           "remote_patch_strip": 0
         }
       }
