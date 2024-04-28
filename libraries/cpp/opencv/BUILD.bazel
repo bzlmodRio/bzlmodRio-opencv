@@ -1,44 +1,31 @@
-load("@rules_cc//cc:defs.bzl", "cc_library")
-
 alias(
     name = "opencv",
     actual = ":shared",
     visibility = ["//visibility:public"],
 )
 
-cc_library(
-    name = "shared",
-    linkstatic = 1,
-    target_compatible_with = select({
-        "@rules_bzlmodrio_toolchains//constraints/is_raspi32:raspi32": ["@platforms//:incompatible"],
-        "//conditions:default": [],
-    }),
-    visibility = ["//visibility:public"],
-    deps = [
-    ] + [
-        "@bzlmodrio-opencv//private/cpp/opencv:shared",
-    ],
-)
-
-cc_library(
+alias(
     name = "static",
-    linkstatic = 1,
+    actual = "@bzlmodrio-opencv//private/cpp/opencv:static",
     target_compatible_with = select({
         "@rules_bzlmodrio_toolchains//constraints/is_raspi32:raspi32": ["@platforms//:incompatible"],
         "//conditions:default": [],
     }),
     visibility = ["//visibility:public"],
-    deps = [
-    ] + [
-        "@bzlmodrio-opencv//private/cpp/opencv:static",
-    ],
 )
 
-cc_library(
-    name = "jni",
+alias(
+    name = "shared",
+    actual = "@bzlmodrio-opencv//private/cpp/opencv:shared",
+    target_compatible_with = select({
+        "@rules_bzlmodrio_toolchains//constraints/is_raspi32:raspi32": ["@platforms//:incompatible"],
+        "//conditions:default": [],
+    }),
     visibility = ["//visibility:public"],
-    deps = [
-        ":opencv",
-        "@bzlmodrio-opencv//private/cpp/opencv:jni",
-    ],
+)
+
+alias(
+    name = "jni",
+    actual = "@bzlmodrio-opencv//private/cpp/opencv:jni",
+    visibility = ["//visibility:public"],
 )
