@@ -16,7 +16,7 @@ cc_test(
         "no-sandbox",
     ],
     deps = [
-        "@bzlmodrio-opencv//libraries/cpp/opencv",
+        "@bzlmodrio-opencv//libraries/cpp/opencv:static",
         "@googletest//:gtest_main",
     ],
 )
