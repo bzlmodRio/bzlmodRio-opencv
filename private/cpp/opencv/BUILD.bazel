@@ -1,5 +1,11 @@
 load("@rules_cc//cc:defs.bzl", "cc_library")
 
+alias(
+    name = "header_files",
+    actual = "@bazelrio_edu_wpi_first_thirdparty_frc_opencv_opencv-cpp_headers//:header_files",
+    visibility = ["@bzlmodrio-opencv//:__subpackages__"],
+)
+
 cc_library(
     name = "shared_interface",
     srcs = select({
@@ -16,12 +22,6 @@ cc_library(
     }),
     visibility = ["@bzlmodrio-opencv//:__subpackages__"],
     deps = ["@bazelrio_edu_wpi_first_thirdparty_frc_opencv_opencv-cpp_headers//:headers"],
-)
-
-alias(
-    name = "header_files",
-    actual = "@bazelrio_edu_wpi_first_thirdparty_frc_opencv_opencv-cpp_headers//:header_files",
-    visibility = ["@bzlmodrio-opencv//:__subpackages__"],
 )
 
 filegroup(
